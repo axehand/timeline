@@ -1,0 +1,22 @@
+캐릭터 - Character	대사 - Context	명령어 - Commend	입력변수1 - Input1	입력변수2 - Input2	입력변수3 - Input3	입력변수4 - Input4	입력변수5 - Input5	입력변수6 - Input6
+		ShowBG	BG_Test	Fade	1.5			
+		Show	BlueHawai	Fade	1.5			
+BlueHawai	안녕하세요. 대화 시스템 테스트를 진행하겠습니다.							
+BlueHawai	대화 시스템은 여러 캐릭터를 등장시킬 수 있습니다.							
+		Show	Malibu	Fade	1.5			
+Malibu	<wiggle>이런 식으로 여러 캐릭터가 등장할 수도 있고~</wiggle>							
+BlueHawai	<color=red>같은 위치에 두명이나 등장하면 어떡합니까...							
+BlueHawai	좀 비켜주시죠...							
+Malibu	앗~ 미안미안~!							
+		HideContext						
+		ImageEffect	Malibu	Move	Left	1		
+		ImageEffect	BlueHawai	Move	Right	1		
+		Wait	1.5					
+		ImageEffect	Malibu	Shake				
+		ImageEffect	BlueHawai	Jump				
+		Wait	1					
+		ImageEffect	BlueHawai	Turn				
+		ImageEffect	Malibu	FallDown				
+Malibu	이런 식으로 이미지를 움직일 수 있어!							
+BlueHawai	또한 음영처리를 통해 말하는 주체를 하이라이트 할 수도 있습니다							
+		Exit						

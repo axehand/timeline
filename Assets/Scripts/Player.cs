@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float maxSpeed;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
-    bool isWalk;
+    //bool isWalk;
     Animator anim;
 
     void Awake()
@@ -31,10 +31,10 @@ public class Player : MonoBehaviour
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;    
         }        
 
-        if(rigid.velocity.normalized.x == 0)
-            anim.SetBool("isWalk",false);
-        else
-            anim.SetBool("isWalk",true);
+       // if(rigid.velocity.normalized.x == 0)
+            //anim.SetBool("isWalk",false);
+        //else
+           // anim.SetBool("isWalk",true);
     }
 
     void FixedUpdate() 
