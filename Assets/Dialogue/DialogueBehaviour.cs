@@ -25,7 +25,7 @@ public class DialogueBehaviour : PlayableBehaviour
 
     private bool clipPlayed = false;
     private bool pauseScheduled = false;
-    private Animator animator; // Animator 컴포넌트를 저장할 변수 추가
+    private Animator animator;
 
     public override void OnPlayableCreate(Playable playable)
     {
@@ -36,14 +36,12 @@ public class DialogueBehaviour : PlayableBehaviour
 {
     if (!clipPlayed && info.weight > 0f)
     {
-        // "Player"라는 이름의 GameObject를 찾습니다.
         GameObject playerGameObject = GameObject.Find(characterName);
         if (playerGameObject != null)
         {
             Animator animator = playerGameObject.GetComponent<Animator>();
             if (animator != null)
             {
-                // 애니메이션 상태에 따라 Animator의 파라미터 값을 설정합니다.
                 switch (animState)
                 {
                     case AnimState.idle:
