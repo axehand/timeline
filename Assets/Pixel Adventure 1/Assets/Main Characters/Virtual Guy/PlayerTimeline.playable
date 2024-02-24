@@ -472,9 +472,12 @@ MonoBehaviour:
   m_Name: DialogueClip(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
+    director: {fileID: 0}
     characterName: Player
     dialogueLine: test 3
     dialogueSize: 40
+    playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    animState: 0
     hasToPause: 1
 --- !u!114 &-2965575433562534203
 MonoBehaviour:
@@ -489,9 +492,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   template:
+    director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue1
     dialogueSize: 40
+    playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    animState: 1
     hasToPause: 1
 --- !u!114 &-1543751026100354376
 MonoBehaviour:
@@ -553,9 +559,12 @@ MonoBehaviour:
   m_Name: DialogueClip(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
+    director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue5
     dialogueSize: 40
+    playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    animState: 0
     hasToPause: 1
 --- !u!114 &1436674553598645553
 MonoBehaviour:
@@ -570,9 +579,12 @@ MonoBehaviour:
   m_Name: DialogueClip(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
+    director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue6
     dialogueSize: 40
+    playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    animState: 0
     hasToPause: 1
 --- !u!114 &2342337194907203378
 MonoBehaviour:
@@ -609,9 +621,12 @@ MonoBehaviour:
   m_Name: DialogueClip(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
+    director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue4
     dialogueSize: 40
+    playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    animState: 2
     hasToPause: 0
 --- !u!114 &4164331855666548276
 MonoBehaviour:
@@ -626,9 +641,12 @@ MonoBehaviour:
   m_Name: DialogueClip(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
+    director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue2
     dialogueSize: 40
+    playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    animState: 0
     hasToPause: 0
 --- !u!74 &4550098787389231180
 AnimationClip:
@@ -807,7 +825,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
-  m_Name: Dialogues
+  m_Name: ueslogues
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}

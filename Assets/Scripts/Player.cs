@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     //bool isWalk;
-    Animator anim;
+    Animator anim;  
+    
 
     void Awake()
     {
+
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -30,6 +33,8 @@ public class Player : MonoBehaviour
         {
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;    
         }        
+
+
 
        // if(rigid.velocity.normalized.x == 0)
             //anim.SetBool("isWalk",false);

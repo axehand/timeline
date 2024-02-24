@@ -11,7 +11,6 @@ public class GameManager : Singleton<GameManager>
 
 	//private Platoon selectedPlatoon;
 	private PlayableDirector activeDirector;
-
 	private void Awake()
 	{
 		//selectedPlatoon = GetComponent<Platoon>();
@@ -115,14 +114,15 @@ public class GameManager : Singleton<GameManager>
 	}
 	private void Update()
 	{
-		if(gameMode == GameMode.DialogueMoment){
+		if(gameMode == GameMode.DialogueMoment)
+		{
 			if(Input.GetKeyDown(KeyCode.Space))
 			{
 				GameManager.Instance.ResumeTimeline(activeDirector);
 			}
 		}
-		
 	}
+		
 
 	public enum GameMode
 	{
