@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: test Dialogue5
+  m_text: "\uB09C \uB6F4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -258,6 +258,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155107018}
   m_CullTransparentMesh: 1
+--- !u!1001 &286956227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365181, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340377494990365182, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+      propertyPath: m_Name
+      value: Rain 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
 --- !u!1001 &289618097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -584,6 +649,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &930160311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8340377494990365182, guid: 4ad187b3587284ee68d2c4592fd9fc09, type: 3}
+  m_PrefabInstance: {fileID: 286956227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &970608995
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +833,10 @@ PlayableDirector:
     value: {fileID: 2132673781}
   - key: {fileID: 4829963187851211968, guid: c94fa83afa6c64b488435544ca001b36, type: 2}
     value: {fileID: 2132673781}
+  - key: {fileID: -5850978728425185324, guid: c94fa83afa6c64b488435544ca001b36, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7054842546516143190, guid: c94fa83afa6c64b488435544ca001b36, type: 2}
+    value: {fileID: 930160311}
   m_ExposedReferences:
     m_References:
     - 6e7765cfd85b7be4e8b01fa701a08538: {fileID: 0}
