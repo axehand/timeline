@@ -567,8 +567,11 @@ MonoBehaviour:
     director: {fileID: 0}
     characterName: Player
     dialogueLine: test 3
+    dialogueIndex: 0
     dialogueSize: 40
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    textComponent: {fileID: 0}
+    tsv: {fileID: 0}
     animState: 0
     hasToPause: 1
 --- !u!114 &-4069042515121879262
@@ -603,8 +606,11 @@ MonoBehaviour:
     director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue1
+    dialogueIndex: 0
     dialogueSize: 40
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    textComponent: {fileID: 0}
+    tsv: {fileID: 0}
     animState: 1
     hasToPause: 1
 --- !u!114 &-1543751026100354376
@@ -671,8 +677,11 @@ MonoBehaviour:
     director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue5
+    dialogueIndex: 0
     dialogueSize: 40
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    textComponent: {fileID: 0}
+    tsv: {fileID: 0}
     animState: 0
     hasToPause: 1
 --- !u!114 &1436674553598645553
@@ -691,8 +700,11 @@ MonoBehaviour:
     director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue6
+    dialogueIndex: 0
     dialogueSize: 40
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    textComponent: {fileID: 0}
+    tsv: {fileID: 0}
     animState: 0
     hasToPause: 1
 --- !u!114 &2342337194907203378
@@ -733,8 +745,11 @@ MonoBehaviour:
     director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue4
+    dialogueIndex: 0
     dialogueSize: 40
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    textComponent: {fileID: 0}
+    tsv: {fileID: 0}
     animState: 2
     hasToPause: 0
 --- !u!114 &4125966421316286318
@@ -777,8 +792,11 @@ MonoBehaviour:
     director: {fileID: 0}
     characterName: Player
     dialogueLine: test Dialogue2
+    dialogueIndex: 0
     dialogueSize: 40
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
+    textComponent: {fileID: 0}
+    tsv: {fileID: 0}
     animState: 0
     hasToPause: 0
 --- !u!74 &4550098787389231180

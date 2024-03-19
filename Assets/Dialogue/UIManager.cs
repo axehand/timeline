@@ -21,27 +21,27 @@ public class UIManager : Singleton<UIManager>
 		//selectionRectangle.enabled = false;
 		//cameraLockedIcon.enabled = false;
 		string filePath = Path.Combine(Application.dataPath, tsvFilePath);
-        ReadTSVFile(filePath);
+        //ReadTSVFile(filePath);
 	}
 
 	private void Update()
 	{
 		
 	}
-	void ReadTSVFile(string fullPath)
-    {
-        string[] lines = File.ReadAllLines(fullPath);
-        foreach (string line in lines)
-        {
-            string[] fields = line.Split('\t');
-            DialogueEntry entry = new DialogueEntry
-            {
-                ActorCode = fields[0],
-                DialogueText = fields[1]
-            };
-            dialogueList.Add(entry);
-        }
-    }
+	// void ReadTSVFile(string fullPath)
+    // {
+    //     string[] lines = File.ReadAllLines(fullPath);
+    //     foreach (string line in lines)
+    //     {
+    //         string[] fields = line.Split('\t');
+    //         DialogueEntry entry = new DialogueEntry
+    //         {
+    //             ActorCode = fields[0],
+    //             DialogueText = fields[1]
+    //         };
+    //         dialogueList.Add(entry);
+    //     }
+    // }
 	public struct DialogueEntry
     {
         public string ActorCode;
@@ -67,11 +67,10 @@ public class UIManager : Singleton<UIManager>
 		//selectionRectangle.rectTransform.sizeDelta = new Vector2(rectSize.width, rectSize.height);
 	}
 
-	public void SetDialogue(string charName, string lineOfDialogue, int sizeOfDialogue)
+	public void SetDialogue(string lineOfDialogue)
 	{
 		//charNameText.SetText(charName);
 		dialogueLineText.SetText(lineOfDialogue);
-		dialogueLineText.fontSize = sizeOfDialogue;
 
 		//ToggleDialoguePanel(true);
 		

@@ -1,0 +1,13 @@
+ActorCode	contents	
+BlueHawaii	1st							
+BlueHawaii	2nd							
+BlueHawaii	3rd							
+BlueHawaii	4th							
+BlueHawaii	5th
+BlueHawaii	6th
+BlueHawaii	7th							
+BlueHawaii	8th							
+BlueHawaii	9th							
+BlueHawaii	10th							
+BlueHawaii	11th
+BlueHawaii  12th										
