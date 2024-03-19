@@ -549,6 +549,75 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: DialogueClip
+  - m_Version: 1
+    m_Start: 5.983333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: -6110064896257694001}
+    m_Duration: 5
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -6777811978225702438}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: DialogueClip
   m_Markers:
     m_Objects: []
 --- !u!114 &-6351850899689038249
@@ -566,14 +635,33 @@ MonoBehaviour:
   template:
     director: {fileID: 0}
     characterName: Player
-    dialogueLine: test 3
-    dialogueIndex: 0
-    dialogueSize: 40
+    dialogueLine: 
+    dialogueIndex: 3
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
-    textComponent: {fileID: 0}
-    tsv: {fileID: 0}
+    tsv: {fileID: 4900000, guid: fcd7a99a802862b4a8d17d7ef08d75e5, type: 3}
     animState: 0
     hasToPause: 1
+--- !u!114 &-6110064896257694001
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a080d0b02fa184497f8be6dfa47975, type: 3}
+  m_Name: DialogueClip
+  m_EditorClassIdentifier: 
+  template:
+    director: {fileID: 0}
+    characterName: Player
+    dialogueLine: 
+    dialogueIndex: 7
+    playerPrefab: {fileID: 0}
+    tsv: {fileID: 4900000, guid: fcd7a99a802862b4a8d17d7ef08d75e5, type: 3}
+    animState: 0
+    hasToPause: 0
 --- !u!114 &-4069042515121879262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -605,12 +693,10 @@ MonoBehaviour:
   template:
     director: {fileID: 0}
     characterName: Player
-    dialogueLine: test Dialogue1
-    dialogueIndex: 0
-    dialogueSize: 40
+    dialogueLine: 
+    dialogueIndex: 1
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
-    textComponent: {fileID: 0}
-    tsv: {fileID: 0}
+    tsv: {fileID: 4900000, guid: fcd7a99a802862b4a8d17d7ef08d75e5, type: 3}
     animState: 1
     hasToPause: 1
 --- !u!114 &-1543751026100354376
@@ -676,12 +762,10 @@ MonoBehaviour:
   template:
     director: {fileID: 0}
     characterName: Player
-    dialogueLine: test Dialogue5
-    dialogueIndex: 0
-    dialogueSize: 40
+    dialogueLine: 
+    dialogueIndex: 5
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
-    textComponent: {fileID: 0}
-    tsv: {fileID: 0}
+    tsv: {fileID: 4900000, guid: fcd7a99a802862b4a8d17d7ef08d75e5, type: 3}
     animState: 0
     hasToPause: 1
 --- !u!114 &1436674553598645553
@@ -699,12 +783,10 @@ MonoBehaviour:
   template:
     director: {fileID: 0}
     characterName: Player
-    dialogueLine: test Dialogue6
-    dialogueIndex: 0
-    dialogueSize: 40
+    dialogueLine: 
+    dialogueIndex: 6
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
-    textComponent: {fileID: 0}
-    tsv: {fileID: 0}
+    tsv: {fileID: 4900000, guid: fcd7a99a802862b4a8d17d7ef08d75e5, type: 3}
     animState: 0
     hasToPause: 1
 --- !u!114 &2342337194907203378
@@ -744,12 +826,10 @@ MonoBehaviour:
   template:
     director: {fileID: 0}
     characterName: Player
-    dialogueLine: test Dialogue4
-    dialogueIndex: 0
-    dialogueSize: 40
+    dialogueLine: 
+    dialogueIndex: 4
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
-    textComponent: {fileID: 0}
-    tsv: {fileID: 0}
+    tsv: {fileID: 4900000, guid: fcd7a99a802862b4a8d17d7ef08d75e5, type: 3}
     animState: 2
     hasToPause: 0
 --- !u!114 &4125966421316286318
@@ -791,12 +871,10 @@ MonoBehaviour:
   template:
     director: {fileID: 0}
     characterName: Player
-    dialogueLine: test Dialogue2
-    dialogueIndex: 0
-    dialogueSize: 40
+    dialogueLine: 
+    dialogueIndex: 2
     playerPrefab: {fileID: 4320822964114355847, guid: 453b164bf7f76c54aa97898ddecbb5f6, type: 3}
-    textComponent: {fileID: 0}
-    tsv: {fileID: 0}
+    tsv: {fileID: 4900000, guid: fcd7a99a802862b4a8d17d7ef08d75e5, type: 3}
     animState: 0
     hasToPause: 0
 --- !u!74 &4550098787389231180

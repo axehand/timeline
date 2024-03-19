@@ -12,9 +12,7 @@ public class DialogueBehaviour : PlayableBehaviour
     public string characterName;
     public string dialogueLine;
     public int dialogueIndex;
-    public int dialogueSize;
     public GameObject playerPrefab;
-    public TextMeshProUGUI dialogueLineText;
     public TextAsset tsv;
 
     public enum AnimState
@@ -54,57 +52,49 @@ public class DialogueBehaviour : PlayableBehaviour
         return texts;
     }
 
-    
-
-    public void UpdateText(string text)
-    {
-        dialogueLineText.text = text;
-    }
-
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
-{
-    if (!clipPlayed && info.weight > 0f)
     {
-        List<string> dialogueLines = ReadTSVFile(tsv);
-        GameObject playerGameObject = GameObject.Find(characterName);
-        if (playerGameObject != null)
+        if (!clipPlayed && info.weight > 0f)
         {
-            Animator animator = playerGameObject.GetComponent<Animator>();
-            if (animator != null)
+            List<string> dialogueLines = ReadTSVFile(tsv);
+            GameObject playerGameObject = GameObject.Find(characterName);
+            if (playerGameObject != null)
             {
-                switch (animState)
+                Animator animator = playerGameObject.GetComponent<Animator>();
+                if (animator != null)
                 {
-                    case AnimState.idle:
-                        animator.SetBool("IsRunning", false);
-                        animator.SetBool("IsJumping", false);
-                        break;
-                    case AnimState.run:
-                        animator.SetBool("IsRunning", true);
-                        animator.SetBool("IsJumping", false);
-                        break;
-                    case AnimState.jump:
-                        animator.SetBool("IsJumping", true);
-                        animator.SetBool("IsRunning", false);
-                        break;
+                    switch (animState)
+                    {
+                        case AnimState.idle:
+                            animator.SetBool("IsRunning", false);
+                            animator.SetBool("IsJumping", false);
+                            break;
+                        case AnimState.run:
+                            animator.SetBool("IsRunning", true);
+                            animator.SetBool("IsJumping", false);
+                            break;
+                        case AnimState.jump:
+                            animator.SetBool("IsJumping", true);
+                            animator.SetBool("IsRunning", false);
+                            break;
+                    }
+                }
+            
+                // 현재 다이얼로그 인덱스에 따라 텍스트 업데이트
+                if(dialogueLines.Count > dialogueIndex)
+                {
+                    string currentDialogue = dialogueLines[dialogueIndex];
+                    UIManager.Instance.SetDialogue(currentDialogue);
                 }
             }
-        
-            // 현재 다이얼로그 인덱스에 따라 텍스트 업데이트
-            if(dialogueLines.Count > dialogueIndex)
+
+            if (Application.isPlaying && hasToPause)
             {
-                string currentDialogue = dialogueLines[dialogueIndex];
-                UIManager.Instance.SetDialogue(currentDialogue);
+                pauseScheduled = true;
             }
+            clipPlayed = true;
         }
-
-        if (Application.isPlaying && hasToPause)
-        {
-            pauseScheduled = true;
-        }
-
-        clipPlayed = true;
     }
-}
 
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {

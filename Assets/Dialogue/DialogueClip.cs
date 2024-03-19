@@ -8,9 +8,6 @@ using UnityEngine.Timeline;
 public class DialogueClip : PlayableAsset, ITimelineClipAsset
 {
     public DialogueBehaviour template = new DialogueBehaviour ();
-    public TextAsset tsvFile; // TSV 파일 참조
-    public TMP_Text textComponent;
-
 
     public ClipCaps clipCaps
     {
@@ -21,7 +18,6 @@ public class DialogueClip : PlayableAsset, ITimelineClipAsset
     {
         var playable = ScriptPlayable<DialogueBehaviour>.Create (graph, template);
         DialogueBehaviour clone = playable.GetBehaviour ();
-        clone.tsv = tsvFile;
         return playable;
     }
 }

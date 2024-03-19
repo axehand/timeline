@@ -13,42 +13,17 @@ public class UIManager : Singleton<UIManager>
 	public TextMeshProUGUI dialogueLineText;
 	//public GameObject toggleSpacebarMessage, dialoguePanel;
 
-	private string tsvFilePath = "Timelines/Cutscene_Test_KO.tsv";
+	//private string tsvFilePath = "Timelines/Cutscene_Test_KO.tsv";
 
 
 	private void Start()
 	{
 		//selectionRectangle.enabled = false;
 		//cameraLockedIcon.enabled = false;
-		string filePath = Path.Combine(Application.dataPath, tsvFilePath);
+		//string filePath = Path.Combine(Application.dataPath, tsvFilePath);
         //ReadTSVFile(filePath);
 	}
 
-	private void Update()
-	{
-		
-	}
-	// void ReadTSVFile(string fullPath)
-    // {
-    //     string[] lines = File.ReadAllLines(fullPath);
-    //     foreach (string line in lines)
-    //     {
-    //         string[] fields = line.Split('\t');
-    //         DialogueEntry entry = new DialogueEntry
-    //         {
-    //             ActorCode = fields[0],
-    //             DialogueText = fields[1]
-    //         };
-    //         dialogueList.Add(entry);
-    //     }
-    // }
-	public struct DialogueEntry
-    {
-        public string ActorCode;
-        public string DialogueText;
-    }
-
-	 private List<DialogueEntry> dialogueList = new List<DialogueEntry>();
 
 	public void ToggleSelectionRectangle(bool active)
 	{
@@ -69,11 +44,7 @@ public class UIManager : Singleton<UIManager>
 
 	public void SetDialogue(string lineOfDialogue)
 	{
-		//charNameText.SetText(charName);
-		dialogueLineText.SetText(lineOfDialogue);
-
-		//ToggleDialoguePanel(true);
-		
+		dialogueLineText.SetText(lineOfDialogue);		
 	}
 
 	
